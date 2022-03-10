@@ -1,0 +1,87 @@
+* { 
+    /* set căn bản cho wed */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    /* chỉnh font chữ toàn wed kiểu kế thừa  */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {
+
+}
+
+#header {
+    height: 46px;
+    background-color: black;
+}
+#nav, .subnav {
+    list-style-type: none;
+}
+
+#nav > li{
+    display: inline-block; 
+
+}
+
+#nav li{
+    /* đưa chữ kiểu list của li ul sang ngang  hàng */
+    position: relative;
+}
+
+
+#nav > li > a{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav li a{
+    color: #fff;
+    text-decoration: none ;  /* sửa decor chữ mặc định của thẻ a href  */
+    line-height: 46px;
+    padding: 0  24px;
+    display: block;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+    
+#nav > li:hover > a,
+#nav .subnav li:hover a { /* custom màu mè cho thẻ cha có thuộc tính a href của thẻ a con của li*/
+
+    background-color: #ccc;
+    color: #000 ;
+}
+
+#nav .subnav{
+    display: none;
+    top: 100%;
+    left: 0;
+    /* ẩn thuộc tính con của thẻ */
+    min-width: 160px;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
+
+#nav .subnav a{
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+#slider {
+
+}
+
+#content {
+
+}
+
+#footer {
+
+}
