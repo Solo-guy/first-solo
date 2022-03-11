@@ -7,7 +7,7 @@
 
 html{
     /* chỉnh font chữ toàn wed kiểu kế thừa  */
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif; 
 }
 
 #main {
@@ -21,10 +21,12 @@ html{
     top: 0;
     left: 0;
     right: 0;
+    /* sài trong position nếu position muốn hiện nhưng bị cái khác đè lên dạng ưu tiên  */
     z-index: 1;
 }
 
 #nav {
+    /* cùng 1 dòng nhưng đóng khung lại */
     display: inline-block;
 }
 
@@ -45,6 +47,7 @@ html{
 
 #nav > li > a{
     color: #fff;
+    /* chỉnh kiểu chữ hoa hoặc j j (upercase: chữ hoa hết) */
     text-transform: uppercase;
 }
 
@@ -71,8 +74,8 @@ html{
     display: none;
     top: 100%;
     left: 0;
-    /* ẩn thuộc tính con của thẻ */
-    min-width: 160px;
+    /* xác định chiều rộng tối thiểu */
+    min-width: 160px; 
     position: absolute;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, .3);
@@ -81,6 +84,7 @@ html{
 #nav .subnav a{
     color: #000;
     padding: 0 12px;
+    /* chỉnh khoảng cách dọc của icon tương tự chữ */
     line-height: 38px;
 }
 #nav .nav-arrow-down {
@@ -89,13 +93,15 @@ html{
 }
 
 #header .search-btn {
+    /* nổi sang phải phẩn từ chứa nó*/
     float: right;
     padding: 0 21px;
 }
 
 #header .search-btn:hover{
     background-color: #f44336;
-    cursor: pointer;
+    /* đổi trỏ chuột thành bàn tay khi đưa lên thuộc tính */
+    cursor: pointer; 
 }
 
 #header .search-icon {
@@ -107,6 +113,7 @@ html{
 #slider {
     margin-top: 46px;
     padding-top: 50%;
+    /* viết tắt khi đưa ảnh và setting */
     background: url('/assets/img/slider/la.jpg') top center / cover no-repeat;
     position: relative;
 
@@ -117,6 +124,7 @@ html{
     color: #fff;
     bottom: 47px;
     width: 100%;
+    /* đưa chữ ra giữa */
     text-align: center;
 }
 #slider .text-heading{
@@ -125,11 +133,44 @@ html{
 }
 #slider .text-description{
     font-size: 15px;
+    /* cách ra xung quanh */
     padding: 25px;
 }
 
 #content {
     height: 1000px;
+}
+
+#content .content-section {
+    width: 800px;
+    padding: 64px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .section-heading {
+    font-size: 30px;
+    /* chỉnh chữ mỏng hoặc đậm lên */
+    font-weight: 500;
+    text-align: center;
+    /* khoảng cách giữa chữ */
+    letter-spacing: 4px;
+}
+
+#content .section-sub-heading {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    /* đổi kiểu chữ */
+    font-style: italic;  
+    /* làm mờ đi  */
+    opacity: 0.6; 
+}
+#content .about-text{
+    margin-top: 25px;
+    font-size: 15px;
+    /* khoảng cách chiều dọc giữa chữ */
+    line-height: 1.4;
 }
 
 #footer {
