@@ -94,17 +94,17 @@
                                 <h3 class="place-heading">New York</h3>
                             <div class="place-time">Fri 27 Nov 2016</div>
                             <div class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
-                            <a href="#" class="buy-btn">Buy Tickets</a>
+                            <button class="buy-btn">Buy Tickets</button>
                             </div>
                         </div>
                         <!-- place2 -->
                         <div class="place-item">
-                            <img src="/assets/img/tour-places/paris.jpg" alt="place2" class="place-img">
+                            <img src="/assets/img/tour-places/paris.jpg" alt="place2 " class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">Paris</h3>
                             <div class="place-time">Sat 28 Nov 2016</div>
                             <div class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
-                            <a href="#" class="buy-btn">Buy Tickets</a>
+                            <button class="buy-btn">Buy Tickets</button>
                             </div>
                         </div>
                         <!-- place 3 -->
@@ -115,7 +115,7 @@
                                 </h3>
                             <div class="place-time">Sun 29 Nov 2016</div>
                             <div class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
-                            <a href="#" class="buy-btn">Buy Tickets</a>
+                            <button class="buy-btn">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="clear"></div>
@@ -129,10 +129,44 @@
             </div>
         </div>
 <!-- phần footer -->
-
         <div id="footer">
 
         </div>
     </div>
+<!-- buil buy ticket -->
+<div class="modal">
+    <div class="modal-container">
+        <div class="modal-close">
+            <i class="ti-close"></i>
+        </div>
+        <header class="modal-header">
+        <i class="modal-heading-icon ti-bag"></i>
+        Ticket
+         </header>
+
+        <div class="modal-body">
+            <label for="quatily" class="modal-label">
+                <i class="ti-shopping-cart"></i>
+                Tickets, $15 per person
+            </label>  
+            <input id="quatily" type="text" class="modal-input" placeholder="How many?">
+ 
+            <label for="email" class="modal-label">
+                <i class="ti-user"></i>
+                Send to
+            </label>  
+            <input id="email" type="text" class="modal-input" placeholder="Enter email...">
+            
+            <button id="buy-ticket">
+                Pay <i class="ti-check"></i>
+            </button>
+        </div> 
+        <footer class="modal-footer">
+            <p class="modal-help">Need <a href="">Help</a></p>
+        </footer>
+    </div>
+</div>
+
+    
 </body>
 </html>
