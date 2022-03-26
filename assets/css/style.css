@@ -6,6 +6,8 @@
 }
 
 html{
+    /* ấn vào thì cuộn xuống dòng ấn */
+    scroll-behavior: smooth;
     /* chỉnh font chữ toàn wed kiểu kế thừa  */
     font-family: Arial, Helvetica, sans-serif; 
 }
@@ -13,6 +15,7 @@ html{
 #main {
 
 }
+/* Các thẻ css chung cho trang */
 .clear {
     /* xử lý vấn đề về khoảng cách giúp thẻ div của phần member ôm hết phần tử con khi css bị mất */
     /* ý phụ: đưa phần tử cha(member-list) bị nổi lên trên xuống ôm hết các phần tử con (div member-item, member-name...) */
@@ -21,6 +24,71 @@ html{
 .text-white{
     color: #fff !important;
 }
+
+.text-center{
+    text-align: center !important
+    /* đưa sang tay trái,, phải */
+}
+
+.pull-right{
+    float: right !important; 
+}   
+
+.btn {
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 6px;
+    margin-top: 15px;
+    border: none;
+    margin-left: 61.5px;
+}
+.btn:hover {
+    cursor: pointer;
+    color: #000;
+    background-color: #ccc;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+/* tạo css giả cho hàng row để khỏi thêm thẻ div clear chung vào  */
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col-half{
+    width: 50%;
+}
+
+.col-full{
+    width: 100%;
+}
+
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px ;
+}
+
+.col-third {
+    width: 33.33333%;
+}
+ 
+.mt-8{
+    margin-top: 8px !important;
+}
+
+.mt-16{
+    margin-top: 16px !important;
+}
+
+/* css trang */
 #header {
     height: 46px;
     background-color: black;
@@ -144,13 +212,9 @@ html{
     padding: 25px;
 }
 
-#content {
-    height: 1000px;
-}
-
 #content .content-section {
     width: 800px;
-    padding: 64px 0;
+    padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -187,12 +251,6 @@ html{
 
 }
 
-#content .member-item{
-    text-align: center;
-    /* đưa sang tay trái,, phải */
-    float: left;
-    width: 33.333%;
-}
 #content .member-name{
     font-size: 15px;
 }
@@ -238,15 +296,9 @@ html{
 }
 /* place */
 .place-list {
-    margin: 32px -8px 48px;
+    margin-top: 32px;
     font-size: 15px;
 
-}
-
-.place-item {
-    float: left;
-    width: 33.33333%;
-    padding: 0 8px;
 }
 
 .place-img {
@@ -279,21 +331,6 @@ html{
 
 }
 
-.buy-btn {
-    background-color: #000;
-    color: #fff;
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px 16px;
-    border-radius: 6px;
-    margin-top: 15px;
-    border: none;
-    margin-left: 61.5px;
-}
-.buy-btn:hover {
-    color: #000;
-    background-color: #ccc;
-}
 
 /* build buy ticket */
 .modal{
@@ -337,6 +374,7 @@ html{
     position: absolute;
     right: 0;
     top: 0;
+    background-color: #f44336;
     color: #fff;
     padding: 12px;
     cursor: pointer;
@@ -398,6 +436,49 @@ html{
     }
 } 
 
+.contact-content{
+    margin-top: 48px;
+}
+
+.contact-info{
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-info i[class*="ti-"]{
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+/* Map section */
+.map-section img{
+    width: 100%;
+}
 #footer {
-    
+    padding: 64px 16px;
+    text-align: center;
+}
+#footer .social{
+    font-size: 24px;
+}
+#footer .social a {
+    color: rgba(0, 0, 0, .6);
+    text-decoration: none;
+}
+#footer .coppyright a:hover,
+#footer .social a:hover {
+    color: rgba(0, 0, 0, .4);
+}
+#footer .coppyright {
+    padding-top: 15px;
+    color: rgba(0, 0, 0, .6);
+}
+#footer .coppyright a{
+    color: rgba(0, 0, 0, .6);
 }
